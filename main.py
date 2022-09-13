@@ -1,3 +1,12 @@
-name = input("Welcome to Cathedral Coffee Club\nWhat is your name?\n")
-print("Hello {}!".format(name))
-coffee = input("How many coffees would you like today?")
+#Header
+print("                              ♡    ♡   ᕬ  ᕬ  ♡    ♡")
+print("                              +   ♡  （⌯'-'⌯)   ♡   +               ʚ♡ɞ ")
+print("                              ┏━━━━♡━━━━U━U━━━━♡━━━━┓")
+print("         ʚ♡ɞ                  ♡ 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒞𝒞𝒞 𝒞𝒶𝒻𝑒 ♡")
+print("                              ┗━━━━♡━━━━━━━━━━━♡━━━━┛")
+#Drinks Menu
+
+
+
+
+    
