@@ -148,6 +148,19 @@ while (order_counter) > 0:
     #order_line = order_line + " (without sugar)"
     #orders[coffee_counter,2] = "(without sugar)"
     coffee_sugar = "(without sugar)"
+    
+ #orders[coffee_counter -1] = order_line
+  orders.append([coffee_type, coffee_price, coffee_sugar])
+  order_counter = order_counter -1
+ # print("Your current total is ${}" .format(total_due))
+#print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n {} " .format (receipt_content))
+print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n ")
+      
+for x in orders:
+  print(" {} {} {}".format (x[0], x[2], x[1]))
+        
+
+print("\nYour total amount to pay is ${:.2f} \n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･" .format(total_due))
 
 
     
