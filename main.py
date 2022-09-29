@@ -1,6 +1,6 @@
 import numbers
 
-#Header
+#Header for customers
 print("                              ♡    ♡   ᕬ  ᕬ  ♡    ♡")
 print("                              +   ♡  （⌯'-'⌯)   ♡   +               ʚ♡ɞ ")
 print("                              ┏━━━━♡━━━━U━U━━━━♡━━━━┓")
@@ -8,7 +8,7 @@ print("         ʚ♡ɞ                  ♡ 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉�
 print("                              ┗━━━━♡━━━━━━━━━━━♡━━━━┛")
 #Drinks Menu
 
-# list of drinks
+# list of drinks menu 
 drink_list = ['Flat', 'White', 'Cappucino', 'Latte', 'Decaf', 'Hot Chocolate'] 
 
 print("                        ╭───── ⋅ ⋅ ───── ✩ ────── ⋅ ⋅ ─────╮")
@@ -20,10 +20,11 @@ print("                        |      $3.00          ..Decaf(4)   |")
 print("                        |      $4.00  ..Hot Chocolate(5)   |")
 print("                        ╰───── ⋅ ⋅ ───── ✩ ────── ⋅ ⋅ ─────╯")
 print(":･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ")
-#intro
+#intro 
 name = input("Welcome to Cathedral Coffee Club\n\nWho shall we put the order name under?\n")
 print("\nHello {}!".format(name))
 quantity = input("How many coffees would you like today?\n")
+#Identifying for invalid answers
 is_coffee_number = False
 try:
   quantity=int(quantity)  
@@ -85,7 +86,8 @@ while (order_counter) > 0:
   print("                        |      $4.00  ..Hot Chocolate(5)   |")
   print("                        ╰───── ⋅ ⋅ ───── ✩ ────── ⋅ ⋅ ─────╯")
   coffee = input("please choose your coffee #{} using the numbers from 1-5\n\n".format(coffee_counter))
-  
+
+  #creating loop for coffee ordering process
   while int(coffee) != 1 and int(coffee) != 2 and int(coffee) != 3 and   int(coffee) != 4 and int(coffee) != 5: 
     coffee = int(input("Please choose one number from 1-5\n\n"))
   
@@ -155,12 +157,13 @@ while (order_counter) > 0:
  # print("Your current total is ${}" .format(total_due))
 #print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n {} " .format (receipt_content))
 print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n ")
-      
+
+ #coding for the reciept    
 for x in orders:
   print(" {} {} {}".format (x[0], x[2], x[1]))
         
 
-print("\nYour total amount to pay is ${:.2f} \n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･" .format(total_due))
+print("\nYour total amount to pay is ${:.2f} \n\nPlease continue on to the counter to pay. \n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･" .format(total_due))
 
 
     
