@@ -47,7 +47,8 @@ while is_coffee_number == False:
   
 while int(quantity) < 1:
   quantity = input("Invalid number, How many coffees would you like today?\n")
-  
+
+#previous developments
 #print("\nIs {} coffee(s) correct?" .format(quantity))
 #answer = input("yes or no\n\n") 
 #while str(answer) != "yes" and str(answer) != "no": 
@@ -156,14 +157,11 @@ while (order_counter) > 0:
   order_counter = order_counter -1
  # print("Your current total is ${}" .format(total_due))
 #print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n {} " .format (receipt_content))
-print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt\n ")
+print("\n\n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･\nHere's your receipt {}\n " .format (name))
 
  #coding for the reciept    
 for x in orders:
   print(" {} {} {}".format (x[0], x[2], x[1]))
         
 
-print("\nYour total amount to pay is ${:.2f} \n\nPlease continue on to the counter to pay. \n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･" .format(total_due))
-
-
-    
+print("\nYour total amount to pay is ${:.2f} \n\nPlease continue on to the counter to pay. \n:･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･.☽˚｡･ﾟ✧:･.::･ﾟ✧:･" .format(total_due)) 
